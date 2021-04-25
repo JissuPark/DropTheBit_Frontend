@@ -1,3 +1,15 @@
+# 실행 방법
+
+```js
+// 1. 템플릿 설치 명령어
+yarn
+// 2. 자바스크립트 모듈 설치
+yarn add package.json
+// 3. 스크립트 실행
+yarn start
+```
+
+
 # 🤘 Light Blue React Template
 
 Free and open-source admin dashboard template built with React and Bootstrap 4. Developed with ❤️ by [Flatlogic](https://flatlogic.com/). If you love our project please star ⭐️ our repo!
