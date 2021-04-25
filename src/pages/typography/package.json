@@ -1,6 +1,6 @@
 {
-  "name": "typography",
+  "name": "news",
   "version": "1.0.0",
-  "main": "Typography.js",
+  "main": "News.js",
   "license": "MIT"
 }
