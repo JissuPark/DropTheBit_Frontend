@@ -70,28 +70,13 @@ class Register extends React.Component {
        return this.state.password && this.state.password === this.state.confirmPassword;
     }
 
-    addstd = async() =>{
-        const {number, name, age, major} = this.state;
-        await axios.post('/Student/', {number, name, age, major})
-            .then(res=>{
-                console.log(res);
-                if (res.status === 201){
-                    this.setState({addmodal:!this.state.addmodal});
-                    this.getstd();
-                }
-                else{
-                    alert('다시 입력해주세요!');
-                }
-            })
-    }
-
     doRegister(e) {
         e.preventDefault();
         
         const user = {
-            id: this.state.id,
+            user_id: this.state.id,
             email: this.state.email,
-            password: this.state.password,
+            user_pw: this.state.password,
             name: this.state.name,
         };
         axios.post(`http://127.0.0.1:8000/member/register/`, { user }).then(res => {

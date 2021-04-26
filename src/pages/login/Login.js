@@ -41,7 +41,7 @@ class Login extends React.Component {
     doLogin(e) {
         e.preventDefault();
         // 여기를 작성해 주세요.
-        axios.get(`http://127.0.0.1:8000/member/register/`, { id: this.state.id, password: this.state.password }).then(res => {
+        axios.get(`http://127.0.0.1:8000/member/login/`, { id: this.state.id, password: this.state.password }).then(res => {
         console.log(res)});
         this.props.dispatch(loginUser({ id: this.state.id, password: this.state.password }));
     }
