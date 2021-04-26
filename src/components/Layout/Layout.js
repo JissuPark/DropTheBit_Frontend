@@ -88,7 +88,7 @@ class Layout extends React.Component {
                 </CSSTransition>
               </TransitionGroup>
               <footer className={s.contentFooter}>
-                코인에 대한 모든 것 Drop The Bit
+                코인 정보 Drop The Bit
               </footer>
             </main>
           </Hammer>

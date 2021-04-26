@@ -27,6 +27,7 @@ export function registerError(payload) {
 //     },
 //     history: this.props.history
 // }
+
 export function registerUser(payload) {
     return (dispatch) => {
         if (payload.creds.user_id.length > 0 && payload.creds.user_pw.length > 0) {
